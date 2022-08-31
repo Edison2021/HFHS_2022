@@ -15,4 +15,4 @@ java -Xmx4g -jar picard.jar MarkDuplicates I=$1\_added_sorted.bam O=$1\_dedupped
 rm $1\_dedupped.bam
 rm $1\_added_sorted.bam
 
-head -8 $1.dupmetrics.dat | tail -1 | cut -f8 >dup.txt
+head -8 $1.dupmetrics.dat | tail -1 | cut -f9 >dup.txt
