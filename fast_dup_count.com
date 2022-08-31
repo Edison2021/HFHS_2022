@@ -13,5 +13,6 @@ java -Xmx4g -jar picard.jar MarkDuplicates I=$1\_added_sorted.bam O=$1\_dedupped
 
 # save the disk and in most time you will need it
 rm $1\_dedupped.bam
+rm $1\_added_sorted.bam
 
 head -8 $1.dupmetrics.dat | tail -1 | cut -f8 >dup.txt
